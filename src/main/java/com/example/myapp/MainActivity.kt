@@ -8,23 +8,22 @@ import android.widget.EditText
 
 class MainActivity : AppCompatActivity() {
     lateinit var firstName:EditText
-    lateinit var secondName: EditText
+    lateinit var lastName: EditText
     lateinit var nextBtn:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         firstName = findViewById(R.id.firstName)
-        secondName = findViewById(R.id.lastName)
+        lastName = findViewById(R.id.lastName)
         nextBtn = findViewById(R.id.nextBtn)
 
         nextBtn.setOnClickListener {
-            val firstName = firstName.text
-            val lastName = secondName.text
-           val data = intent.getStringExtra("firstName")
-            firstName = "$data"
+            val firstName = firstName.text.toString()
+            val lastName = lastName.text.toString()
             val intent = Intent(this,MainActivity2 ::class.java)
             startActivity(intent)
+
         }
     }
 }

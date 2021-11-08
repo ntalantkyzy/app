@@ -6,60 +6,27 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity2">
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="20dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:text="Имя:" />
-
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:text="Имя"/>
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="20dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:text="Фамилия:" />
+        android:textSize="20dp"
+        android:text="Фамилия"/>
 
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"/>
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.1" >
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:background="@drawable/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"/>
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/"/>
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-    </LinearLayout>
 
 
 </LinearLayout>
